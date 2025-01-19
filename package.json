@@ -1,5 +1,5 @@
 {
-  "name": "summary",
+  "name": "dailypractice",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/mianmalife/summPractice.git"
+    "url": "git+ssh://git@github.com/llf000/dailyPractice.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mianmalife/summPractice/issues"
+    "url": "https://github.com/llf000/dailyPractice/issues"
   },
-  "homepage": "https://github.com/mianmalife/summPractice#readme",
+  "homepage": "https://github.com/llf000/dailyPractice#readme",
   "description": "",
   "devDependencies": {
     "@babel/core": "^7.25.7",
