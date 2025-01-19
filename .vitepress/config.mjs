@@ -64,7 +64,8 @@ export default defineConfig({
         text: 'css3',
         items: [
           { text: 'css3渐变', link: '/css/' },
-          { text: 'border边框', link: '/css/border' }
+          { text: 'border边框', link: '/css/border' },
+          { text: '文本换行', link: '/css/text-wrap' }
         ]
       }],
       '/others/docker/': [{
