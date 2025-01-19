@@ -6,7 +6,8 @@
     "dev": "vitepress dev --port=6789",
     "build": "vitepress build",
     "preview": "vitepress preview",
-    "roll": "rollup -c -w"
+    "roll": "rollup -c -w",
+    "pub": "gh-pages -d .vitepress/dist"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,7 @@
     "@rollup/plugin-commonjs": "^26.0.1",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "core-js": "^3.38.1",
+    "gh-pages": "^6.3.0",
     "rollup": "^4.24.0",
     "vitepress": "^1.3.3"
   },
