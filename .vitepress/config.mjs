@@ -39,6 +39,12 @@ export default defineConfig({
             { text: '常见方法', link: '/JavaScript/advanced' },
             { text: '工具函数', link: '/JavaScript/tools' }
           ],
+        },
+        {
+          text: '功能实现',
+          items: [
+            { text: '对象数组过滤', link: '/JavaScript/filterData' },
+          ],
         }
       ],
       '/gitOperation/': [{
