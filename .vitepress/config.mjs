@@ -2,8 +2,8 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: '/summPractice/',
-  head: [['link', { rel: 'icon', href: '/summPractice/favicon.ico' }]],
+  base: '/dailyPractice/',
+  head: [['link', { rel: 'icon', href: '/dailyPractice/favicon.ico' }]],
   lastUpdated: true,
   title: "随记",
   description: "这是日常记录的一份清单",
