@@ -12,6 +12,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '首页', link: '/' },
+      { text: 'VUE3', link: '/vue3/', activeMatch: '/vue3/' },
       { text: 'Javascript', link: '/JavaScript/', activeMatch: '/JavaScript/' },
       { text: 'CSS', link: '/css/', activeMatch: '/css/' },
       { text: 'Git', link: '/gitOperation/', activeMatch: '/gitOperation/' },
@@ -26,12 +27,23 @@ export default defineConfig({
       }
     ],
     sidebar: {
+      '/vue3/': [
+        {
+          text: 'API',
+          items: [
+            { text: '全局API', link: '/vue3/' },
+            {
+              text: '组合式API', link: '/vue3/CompositionAPI'
+            },
+          ],
+        }
+      ],
       '/JavaScript/': [
         {
           text: '基础',
           items: [
             { text: '基础语法', link: '/JavaScript/' },
-          ],
+          ]
         },
         {
           text: '手写类',
