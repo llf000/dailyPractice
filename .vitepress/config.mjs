@@ -19,12 +19,19 @@ export default defineConfig({
       { text: 'NodeJs', link: '/nodejs/', activeMatch: '/nodejs/' },
       {
         text: 'Others',
-        items: [{
-          text: 'Docker',
-          link: '/others/docker/',
-          activeMatch: '/others/docker/'
-        }]
-      }
+        items: [
+          {
+            text: 'Docker',
+            link: '/others/docker/',
+            activeMatch: '/others/docker/'
+          },
+          // {
+          //   text: 'Webpack',
+          //   link: '/others/webpack/',
+          //   activeMatch: '/others/webpack/'
+          // },
+        ]
+      },
     ],
     sidebar: {
       '/vue3/': [
@@ -32,8 +39,24 @@ export default defineConfig({
           text: 'API',
           items: [
             { text: '全局API', link: '/vue3/' },
+            { text: '组合式API', link: '/vue3/CompositionAPI' },
             {
-              text: '组合式API', link: '/vue3/CompositionAPI'
+              text: '内置内容',
+              items: [
+                {
+                  text: '指令',
+                  link: '/vue3/BuiltIns/directives',
+                  activeMatch: '/vue3/BuiltIns/directives'
+                },
+                {
+                  text: '组件',
+                  link: '/vue3/BuiltIns/components'
+                },
+                {
+                  text: '特殊元素/属性',
+                  link: '/vue3/BuiltIns/spacial'
+                },
+              ]
             },
           ],
         }
