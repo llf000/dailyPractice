@@ -12,11 +12,17 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '首页', link: '/' },
-      { text: 'VUE3', link: '/vue3/', activeMatch: '/vue3/' },
       { text: 'Javascript', link: '/JavaScript/', activeMatch: '/JavaScript/' },
       { text: 'CSS', link: '/css/', activeMatch: '/css/' },
       { text: 'Git', link: '/gitOperation/', activeMatch: '/gitOperation/' },
       { text: 'NodeJs', link: '/nodejs/', activeMatch: '/nodejs/' },
+      {
+        text: 'VUE',
+        items: [
+          { text: 'Vue3', link: '/vue/vue3/', activeMatch: '/vue/vue3/' },
+          { text: 'Vue Router', link: '/vue/vue-router/' },
+        ]
+      },
       {
         text: 'Others',
         items: [
@@ -34,33 +40,6 @@ export default defineConfig({
       },
     ],
     sidebar: {
-      '/vue3/': [
-        {
-          text: 'API',
-          items: [
-            { text: '全局API', link: '/vue3/' },
-            { text: '组合式API', link: '/vue3/CompositionAPI' },
-            {
-              text: '内置内容',
-              items: [
-                {
-                  text: '指令',
-                  link: '/vue3/BuiltIns/directives',
-                  activeMatch: '/vue3/BuiltIns/directives'
-                },
-                {
-                  text: '组件',
-                  link: '/vue3/BuiltIns/components'
-                },
-                {
-                  text: '特殊元素/属性',
-                  link: '/vue3/BuiltIns/spacial'
-                },
-              ]
-            },
-          ],
-        }
-      ],
       '/JavaScript/': [
         {
           text: '基础',
@@ -103,6 +82,32 @@ export default defineConfig({
           { text: '文本换行', link: '/css/text-wrap' }
         ]
       }],
+      '/vue/vue3/': [
+        {
+          text: 'API',
+          items: [
+            { text: '全局API', link: '/vue/vue3/' },
+            { text: '组合式API', link: '/vue/vue3/CompositionAPI' },
+            {
+              text: '内置内容',
+              items: [
+                {
+                  text: '指令',
+                  link: '/vue/vue3/BuiltIns/directives',
+                  activeMatch: '/vue/vue3/BuiltIns/directives'
+                },
+                { text: '组件', link: '/vue/vue3/BuiltIns/components' },
+                { text: '特殊元素/属性', link: '/vue/vue3/BuiltIns/spacial' },
+              ]
+            },
+          ],
+        }
+      ],
+      'vue/vue-router': [
+        { text: '关于Vue Router', link: '/vue/vue-router/' },
+        { text: '基本用法', link: '/vue/vue-router/use' },
+        { text: 'others', link: '/vue/vue-router/others' }
+      ],
       '/others/docker/': [{
         text: '常用命令',
         items: [
