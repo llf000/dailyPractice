@@ -21,6 +21,7 @@ export default defineConfig({
         items: [
           { text: 'Vue3', link: '/vue/vue3/', activeMatch: '/vue/vue3/' },
           { text: 'Vue Router', link: '/vue/vue-router/' },
+          { text: 'Pinia', link: '/vue/pinia' },
         ]
       },
       {
@@ -31,11 +32,11 @@ export default defineConfig({
             link: '/others/docker/',
             activeMatch: '/others/docker/'
           },
-          // {
-          //   text: 'Webpack',
-          //   link: '/others/webpack/',
-          //   activeMatch: '/others/webpack/'
-          // },
+          {
+            text: 'Webpack',
+            link: '/others/webpack/',
+            activeMatch: '/others/webpack/'
+          },
         ]
       },
     ],
@@ -113,7 +114,10 @@ export default defineConfig({
         items: [
           { text: 'Docker基础', link: '/others/docker/' },
         ]
-      }]
+      }],
+      '/others/webpack/': [
+        { text: '搭建一个vue3项目', link: '/others/webpack/' },
+      ]
     },
 
     socialLinks: [
